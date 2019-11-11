@@ -24,8 +24,8 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
-    "prepare": "npm run build:cjs && build:es",
-    "prepublishOnly": "npm run build:cjs && build:es"
+    "prepare": "npm run build:cjs && npm run build:es",
+    "prepublishOnly": "npm run build:cjs && npm run build:es"
   },
   "bin": {
     "lesgo-scripts": "./bin/lesgo-scripts.sh"
