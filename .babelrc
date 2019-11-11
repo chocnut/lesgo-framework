@@ -1,4 +1,17 @@
 {
-  "presets": ["@babel/preset-env", "minify"],
-  "comments": false
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    },
+    "cjs": {
+      "presets": [["@babel/preset-env"]]
+    }
+  }
 }
